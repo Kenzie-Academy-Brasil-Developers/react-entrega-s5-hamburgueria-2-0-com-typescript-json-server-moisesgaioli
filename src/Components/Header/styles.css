@@ -1,0 +1,33 @@
+.header-container {
+    height: 80px;
+    background-color: var(--color-gray-0);
+}
+
+.header-container a {
+    color: #BDBDBD;
+    width: 25px;
+    height: 25px;
+}
+
+.header-logo {
+    
+}
+
+.input-search {
+    display: none;
+}
+
+.button-search {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #BDBDBD;
+    width: 25px;
+    height: 25px;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

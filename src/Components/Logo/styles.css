@@ -1,0 +1,9 @@
+.logo-title {
+    color: var(--color-gray-600);
+    font-size: 38px;
+}
+
+.logo-kenzie {
+    color: var(--color-secondary-red);
+    font-size: 24px;
+}

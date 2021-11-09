@@ -1,0 +1,19 @@
+
+
+.form-container-login {
+    height: 461px;
+    padding: 21px 18px;
+    border: 2px solid var(--color-gray-0);
+    box-shadow: 0px 0px 30px -20px #00000040;
+    border-radius: 5px;
+    margin-top: 14px;
+}
+
+.login-title {
+    margin-bottom: 24px;
+}
+
+.form-container-login p {
+    margin: 19px 0 21px 0;
+}
+
