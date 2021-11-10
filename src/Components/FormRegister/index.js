@@ -13,7 +13,7 @@ const FormRegister = () => {
     const formSchema = yup.object().shape({
         name: yup.string().min(2, "Deve conter no mínimo 2 caracteres").matches(/^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/, "Deve conter somente letras").required("Nome obrigatório"),
         email: yup.string().required("Email obrigatório").email("Digite um email válido"),
-        password: yup.string().required("Senha obrigatória").matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/, "Senha deve conter letra maiúscula, minúscula e caractere especial"),
+        password: yup.string().required("Senha obrigatória").matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#:])[0-9a-zA-Z$*&@#:]{8,}$/, "Senha deve conter letra maiúscula, minúscula e caractere especial"),
         confirmPassword: yup.string().oneOf([yup.ref("password")], "As senhas devem ser idênticas").required("Senha obrigatória"),
     })
 
