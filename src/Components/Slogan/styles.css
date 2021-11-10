@@ -27,3 +27,11 @@
     color: var(--color-gray-600);
     font-weight: bold;
 }
+
+@media (min-width: 768px) {
+
+    .slogan-container {
+        width: 377px;
+        height: 95px;
+    }
+}

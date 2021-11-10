@@ -17,3 +17,8 @@
     margin: 19px 0 21px 0;
 }
 
+@media (min-width: 768px) {
+    .form-container-login {
+        width: 500px;
+    }
+}

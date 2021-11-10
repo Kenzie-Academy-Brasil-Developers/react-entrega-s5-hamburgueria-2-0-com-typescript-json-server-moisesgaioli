@@ -24,7 +24,6 @@ const ProductsContext = createContext<ProductsContextProps>({} as ProductsContex
 export const ProductsProvider = ({ children }: ProductsProviderProps) => {
 
     const [products, setProducts] = useState<Products[]>([] as Products[])
-    const [productSearching, setProductSearching] = useState<Products[]>([] as Products[])
 
     useEffect(() => {
         Api

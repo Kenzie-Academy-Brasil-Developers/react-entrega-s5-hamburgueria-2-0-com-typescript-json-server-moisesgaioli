@@ -4,6 +4,7 @@ import * as yup from "yup"
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import "./styles.css"
+import { Link } from "react-router-dom";
 
 const FormLogin = () => {
 
@@ -36,7 +37,9 @@ const FormLogin = () => {
                 </div>
                 <button className="button-default button-login button-green" type="submit"> Logar </button>
                 <p className="font-body text-center"> Crie sua conta para saborear muitas delícias e matar sua fome! </p>
-                <button className="button-default button-login button-gray--light"> Cadastrar </button>
+                <Link to="/cadastro">
+                    <button className="button-default button-login button-gray--light"> Cadastrar </button>
+                </Link>
             </form>
         </div>
     )

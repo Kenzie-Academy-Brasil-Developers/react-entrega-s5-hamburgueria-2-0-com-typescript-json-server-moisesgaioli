@@ -32,7 +32,7 @@ const UserContext = createContext<UserContextProps>({} as UserContextProps)
 export const UserProvider = ({ children }: UserProviderProps) => {
 
     const [authToken, setAuthToken] = useState(
-        () => localStorage.getItem("token") || ""
+        () => localStorage.getItem("@mckenzie/token") || ""
     );
 
     const history = useHistory()
@@ -57,6 +57,7 @@ export const UserProvider = ({ children }: UserProviderProps) => {
                 setAuthToken(token)
                 history.push("/dashboard")
             })
+            .catch(_ => toast.error("Email ou senha incorretos."))
     }
 
     const handleLogout = () => {

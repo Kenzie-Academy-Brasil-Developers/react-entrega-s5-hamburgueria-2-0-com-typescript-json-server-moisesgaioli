@@ -1,5 +1,4 @@
 import { FiShoppingBag } from "react-icons/fi"
-import Logo from "../Logo";
 import "./styles.css"
 
 const Slogan = () => {

@@ -1,9 +1,9 @@
 import { Route, Switch } from "react-router"
 import Login from "../pages/Login";
 import Register from "../pages/Register"
-import Products from "../pages/Products"
+import Dashboard from "../pages/Dashboard"
 import Cart from "../pages/Cart";
-// import Products from "../pages/Products"
+
 
 const Routes = () => {
 
@@ -16,7 +16,7 @@ const Routes = () => {
                 <Register />
             </Route>
             <Route path="/dashboard">
-                <Products />
+                <Dashboard />
             </Route>
             <Route path="/carrinho">
                 <Cart />

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { BsFillCartFill } from "react-icons/bs"
 import { FiLogOut } from "react-icons/fi"
-import { BiSearchAlt2 } from "react-icons/bi"
 import { useUser } from "../../Providers/Users";
 import LogoHeader from "../LogoHeader";
 
@@ -18,19 +17,11 @@ const Header = () => {
                     <LogoHeader />
                 </div>
                 <div className="header-menu">
-                    <input
-                        className="input-search"
-                        placeholder="Digitar Pesquisa"
-                    />
-                    <button className="button-search"> <BiSearchAlt2 /> </button>
-
                     <Link to="/carrinho">
                         <BsFillCartFill />
                     </Link>
 
-                    <Link>
-                        <FiLogOut onClick={handleLogout} />
-                    </Link>
+                    <FiLogOut className="button-logout" onClick={handleLogout} />
                 </div>
             </nav>
         </header>

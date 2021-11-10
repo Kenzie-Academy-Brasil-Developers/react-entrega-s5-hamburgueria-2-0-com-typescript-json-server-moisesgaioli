@@ -25,12 +25,6 @@ htlm, body, main, h1, h2, h3, h4, p, section, div, a, button, input, span, form,
 }
 
 
-.main-container {
-    padding: 18px;
-}
-
-
-
 .button-default {
     font-style: normal;
     font-weight: 600;
