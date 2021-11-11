@@ -16,6 +16,8 @@ interface ProductsProviderProps {
 
 interface ProductsContextProps {
     products: Products[];
+    search: string;
+    setSearch: React.Dispatch<React.SetStateAction<string>>
 }
 
 
@@ -24,6 +26,8 @@ const ProductsContext = createContext<ProductsContextProps>({} as ProductsContex
 export const ProductsProvider = ({ children }: ProductsProviderProps) => {
 
     const [products, setProducts] = useState<Products[]>([] as Products[])
+
+    const [search, setSearch] = useState<string>("")
 
     useEffect(() => {
         Api
@@ -36,7 +40,7 @@ export const ProductsProvider = ({ children }: ProductsProviderProps) => {
     
 
     return (
-        <ProductsContext.Provider value={{ products }}>
+        <ProductsContext.Provider value={{ products, search, setSearch }}>
             {children}
         </ProductsContext.Provider>
     )
